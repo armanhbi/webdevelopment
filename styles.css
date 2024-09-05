@@ -1,0 +1,131 @@
+body {
+    --bgc: white;
+    background-color: var(--bgc);
+    font-family: montserrat;
+}
+
+/* Three buttons at the top */
+
+.styled:hover {
+    /* also for :active & :visited & :link */
+    color: var(--bgc);
+}
+
+.styled:link,
+.styled:active,
+.styled:visited {
+    font-family: courier;
+    font-size: 120%;
+    padding: 5px 20px 5px 20px;
+    margin: 3px;
+    display: inline-block;
+    text-decoration: none;
+    /* no underline */
+    border: 3px solid grey;
+}
+
+/* Marked text */
+
+mark {
+    border: 1px dashed black;
+    /* border */
+    color: DodgerBlue;
+    /* color */
+    padding: 3px;
+    /* padding (space) between text and border. */
+}
+
+/* Custom Button */
+
+.custom_button {
+    background-color: #4CAF50;
+    /* Green background */
+    border: none;
+    /* Remove borders */
+    color: white;
+    /* White text */
+    padding: 15px 30px;
+    /* Some padding */
+    text-decoration: none;
+    /* Remove underline */
+    display: inline-block;
+    /* Get it to display like a button */
+    font-size: 16px;
+    /* Set a font size */
+    border-radius: 50px;
+    /* Rounded corners */
+    transition: all 0.3s ease;
+    /* Smooth transition */
+    cursor: wait;
+    /* Pointer/hand icon */
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+    /* Subtle shadow */
+}
+
+.custom_button:hover {
+    background-color: #45a049;
+    /* Darker green on hover */
+    box-shadow: 0 15px 20px rgba(0, 0, 0, 0.2);
+    /* Elevated shadow on hover */
+    transform: translateY(-10px);
+    /* Slightly lift on hover */
+}
+
+/* Table */
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+td:hover,
+th:hover {
+    background-color: rgb(165, 236, 212);
+}
+
+td.kaan:hover {
+    cursor: pointer;
+    text-decoration: line-through;
+}
+
+/*
+tr:nth-child(odd) {
+    background-color: #6ef2c6;
+}
+
+tr:nth-child(even) {
+    background-color: #5bcba6;
+}
+*/
+
+th {
+    border: 1.5px solid rgb(78, 78, 78);
+    /* background-color: #6ef2c6; */
+}
+
+td {
+    border: 1.5px solid rgb(78, 78, 78);
+}
+
+/* Navigation */
+
+ul.nav {
+    list-style-type: none;
+    background-color: #3e8d72;
+    padding: 0;
+    display: flex;
+}
+
+a.nav {
+    text-decoration: none;
+    text-align: center;
+    color: black;
+    flex: 1;
+    padding: 15px;
+    transition: background-color 0.3s ease;
+}
+
+a.nav:hover {
+    background-color: #306c58;
+}

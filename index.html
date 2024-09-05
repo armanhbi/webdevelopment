@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="de-DE">
+
+<head>
+    <title>This is a title🇮🇷</title>
+
+    <link rel="stylesheet" href="styles.css"> <!--links css file to html-->
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta charset="UTF-8">
+
+    <link rel="icon" type="image/x-icon" href="pics/logo.png">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap">
+
+    <script>
+        function button_click() {
+            var button = document.getElementById("button");
+            button.textContent = +button.textContent + 1;
+        }
+    </script>
+
+    <style>
+        h3 {
+            /* h3 currently not used */
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 id="top">Hello World</h1>
+
+    <h2>Hello World &#128514;</h2>
+
+    <a class="styled" href="https://www.google.com" target="_blank">Link zu Google</a>
+    <br>
+    <a class="styled" href="styles.css">Link zu CSS</a>
+    <br>
+    <a class="styled" title="to email" href="mailto:habibi.arman.2003@gmail.com">Link zu Email</a>
+
+    <hr> <!--horizontal line-->
+
+    <table>
+        <caption>RANDOM CAPTION</caption>
+        <tr>
+            <th colspan="2">A</th>
+            <th>B</th>
+        </tr>
+        <tr>
+            <td>Arman Habibi</td>
+            <td class="kaan" onclick="document.location='https\:\/\/instagram.com\/kaanerayaslim'">Kaan Aslim</td>
+            <td>Irem Bulut</td>
+        </tr>
+        <tr>
+            <td>X</td>
+            <td>Y</td>
+            <td>Z</td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+        </tr>
+    </table>
+
+    <hr>
+
+    <ul style="list-style-type:square;">
+        <li>A</li>
+        <li>B</li>
+        <li>C</li>
+        <li>D</li>
+        <ol type="i" start="100">
+            <li>A</li>
+            <li>B</li>
+            <li>C</li>
+            <li>D</li>
+            <li>E</li>
+        </ol>
+        <li>E</li>
+    </ul>
+
+    <hr>
+
+    <h2 style="font-size: 5vw;">Navigation</h2>
+
+    <ul class="nav">
+        <a class="nav" href="#1">Finder</a>
+        <a class="nav" href="#1">Arc</a>
+        <a class="nav" href="#1">Chrome</a>
+        <a class="nav" href="#1">Terminal</a>
+    </ul>
+
+    <hr>
+
+    <button id="button" onclick="button_click()">1</button>
+    <button style="margin: 0px 100px;" onclick='document.getElementById("date").textContent = Date()'>Button</button>
+    <p id="date">Date
+    <p>
+
+        <hr>
+
+    <p title="TITLE"
+        style="font-family:courier; font-size:125%; text-align:center; color:white; background-color:rgb(18, 18, 19);">
+        test
+    </p>
+
+    <pre>
+        PROGRAMMER TEXT
+    </pre>
+
+    <button class="custom_button" onclick="document.location='#down'">Nach unten Website</button>
+
+    <div style="font-family:courier; margin: 20px; padding: 20px; border: 1px solid black">
+        <p><b>bold</b></p>
+        <p><strong>strong</strong></p>
+        <p><i>italic</i></p>
+        <p><em>Emphasized</em></p>
+        <p>This is a <small>Small</small> text and this is a <mark>marked</mark> text</p>
+        <p>This is a <del>delted</del> text</p>
+        <p>This is a <ins>underlined</ins> text</p>
+        <p>This is a <sub>subscripted</sub> text</p>
+        <p>H<sub>2</sub>O</p>
+        <p>This is a <sup>superscripted</sup> text</p>
+    </div>
+
+    <blockquote cite="https://www.google.com">THIS IS A QUOTE</blockquote>
+
+    <p><cite>WIKIPEDIA</cite>But are we truly living in a <q>simulation</q> <abbr title="SIMULATION"> SIM </abbr></p>
+
+    <!--
+        This is a comment
+        -->
+
+    <address>
+        ARMAN HABIBI
+        München, den 3/9/24
+    </address>
+
+    <bdo dir="rtl">This text will be written from right to left</bdo> <!--rlt= right to left-->
+    <hr>
+    <!--<a style="text-decoration: none; color: black;" id="down" href="#top">JUMP TO TOP</a>-->
+
+    <a href="https://hatrabbits.com/en/random-image/"><img src="pics/pic.jpg" alt="elephant photo" height="200" width="100%"></a>
+    <!-- alt = alternative text if image not available -->
+    <a href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_images_hackman"><img
+            src="https://www.w3schools.com/html/programming.gif" alt="Programmer GIF" style="float: center;"></a>
+
+    <iframe src="https://www.example.com" style="border: none;" title="Test"></iframe>
+</body>
+
+</html>
