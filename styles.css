@@ -56,7 +56,7 @@ mark {
     /* Rounded corners */
     transition: all 0.3s ease;
     /* Smooth transition */
-    cursor: wait;
+    cursor: crosshair;
     /* Pointer/hand icon */
     box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
     /* Subtle shadow */
@@ -128,4 +128,8 @@ a.nav {
 
 a.nav:hover {
     background-color: #306c58;
+}
+
+.forms {
+    margin-top: 10px;
 }

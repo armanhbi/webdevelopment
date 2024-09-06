@@ -2,7 +2,7 @@
 <html lang="de-DE">
 
 <head>
-    <title>This is a title🇮🇷</title>
+    <title>Title🇮🇷</title>
 
     <link rel="stylesheet" href="styles.css"> <!--links css file to html-->
 
@@ -19,6 +19,12 @@
             var button = document.getElementById("button");
             button.textContent = +button.textContent + 1;
         }
+
+        function update() {
+            document.getElementById("textarea").value = document.getElementById("range").value;
+        }
+
+        window.onload = function () { update(); }
     </script>
 
     <style>
@@ -84,6 +90,43 @@
 
     <hr>
 
+    <!--
+    über den namen wird der input festgehalten 
+    es wird an die jeweilige Seite versendet mit dem 'name':'value' als parameter
+    bsp: http://localhost:5500/styles.css?eingabe=Test&fav=Html 
+    -->
+    <form onsubmit="alert(username.value + ' / ' + password.value)" autocomplete="true">
+        <fieldset class="forms">
+            <legend>LOG IN</legend>
+            <input class="forms" type="text" name="username" placeholder="Username"><br />
+            <input type="password" name="password" placeholder="Password"><br />
+            <input class="forms" type="submit" value="Log in">
+        </fieldset>
+    </form>
+
+    <form action="/styles.css" method="get" autocomplete="true">
+        <fieldset class="forms">
+            <legend>Auswahl Dinger</legend>
+            <label><input type="radio" value="html" name="fav"> HTML</label> <br />
+            <label><input type="radio" value="css" name="fav"> CSS</label> <br />
+            <label><input type="radio" value="js" name="fav"> JS</label> <br />
+        </fieldset>
+
+        <select class="forms" name="cars" size="1">
+            <option>BMW</option>
+            <option>Benz</option>
+            <option selected>Audi</option>
+        </select> <br />
+
+        <textarea class="forms" id="textarea" name="range_number" style="width:75%; height:15px; overflow: hidden;" rows="5"></textarea> <br />
+
+        <input type="range" id="range" min="50" max="500" value="400" oninput="update()"> <br />
+
+        <input class="forms" type="submit" value="Click">
+    </form>
+
+    <hr />
+
     <h2 style="font-size: 5vw;">Navigation</h2>
 
     <ul class="nav">
@@ -96,7 +139,7 @@
     <hr>
 
     <button id="button" onclick="button_click()">1</button>
-    <button style="margin: 0px 100px;" onclick='document.getElementById("date").textContent = Date()'>Button</button>
+    <button style="margin: 0px 100px;" onclick='alert("Was geht")'>Button</button>
     <p id="date">Date
     <p>
 
@@ -111,7 +154,7 @@
         PROGRAMMER TEXT
     </pre>
 
-    <button class="custom_button" onclick="document.location='#down'">Nach unten Website</button>
+    <button class="custom_button" onclick="button_click()">Nach unten Website</button>
 
     <div style="font-family:courier; margin: 20px; padding: 20px; border: 1px solid black">
         <p><b>bold</b></p>
@@ -143,10 +186,11 @@
     <hr>
     <!--<a style="text-decoration: none; color: black;" id="down" href="#top">JUMP TO TOP</a>-->
 
-    <a href="https://hatrabbits.com/en/random-image/"><img src="pics/pic.jpg" alt="elephant photo" height="200" width="100%"></a>
+    <a href="https://hatrabbits.com/en/random-image/"><img src="pics/pic.jpg" alt="elephant photo" height="200"
+            width="100%"></a>
     <!-- alt = alternative text if image not available -->
     <a href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_images_hackman"><img
-            src="https://www.w3schools.com/html/programming.gif" alt="Programmer GIF" style="float: center;"></a>
+            src="https://www.w3schools.com/html/programming.gif" alt="Programmer GIF"></a>
 
     <iframe src="https://www.example.com" style="border: none;" title="Test"></iframe>
 </body>
